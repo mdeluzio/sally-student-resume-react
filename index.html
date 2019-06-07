@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sally Student Resume React</title>
+</head>
+<body>
+
+    <div id="application-root"></div>
+
+    <script
+        src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+    <script
+        src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script
+        src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script type="text/babel">
+
+        function App(props) {
+            return (
+                <div>
+                    <header>
+                        <address>
+                            {props.children}
+                            <img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg"
+                            alt='Sally Student photo'></img>
+                            <p><a href="mailto:SStudent@gmail.com">SStudent@gmail.com</a></p>
+                            <p>484-764-9823</p>
+                        </address>
+                    </header>
+
+                    <main>
+                        <section>
+                            <h2>Experience</h2>
+                            <h3>Project Manager</h3>
+                            <h4>Generic Company <span>Sept. 2016 to Present</span></h4>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Consectetur adipiscing elit</li>
+                                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+                            </ul>   
+
+                            <h3>Assistant Project Manager</h3>
+                            <h4>Awesome Company <span>May 2011- Sept. 2016</span></h4>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Consectetur adipiscing elit</li>
+                                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+                            </ul>   
+                        </section>
+
+                        <section>
+                            <h2>Education</h2>
+                            <h3>Penn State University</h3>
+                            <h4>B.S. in Computer Science <span>Sept.2008 - May 2011</span></h4>
+                            <ul>
+                                <li>Honors (GPA 3.8/4.0)</li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h2>Additional Skills</h2>
+                            <ul>
+                                <li>HTML5, CSS3, JavaScript</li>
+                                <li>jQuery</li>
+                                <li>React</li>
+                                <li>Git and Github</li>
+                            </ul>
+                        </section>
+
+                    </main>
+                </div>
+            )
+        }
+        ReactDOM.render(
+            <App>
+                <h1>Sally Student</h1>
+            </App>
+            ,
+        document.querySelector('#application-root'))
+    </script>
+    
+</body>
+</html>
